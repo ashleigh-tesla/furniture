@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Furniture Website</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="boxicons.min.css">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+        list-style: none;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <!-- scroll top -->
+    <a href="#home" class="scroll-top"><i class="bx bx-up-arrow-alt"></i></a>
+    <!-- header -->
+    <header>
+        <div class="nav container">
+            <!-- menu icon -->
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <!-- nav list -->
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+            <!-- logo -->
+            <a href="#" class="logo">
+                Furn<span>.</span>
+            </a>
+            <!-- nav icons -->
+            <div class="nav-icons">
+                <i class="bx bx-cart-alt" id="cart-icon"></i>
+                <i class="bx bx-user" id="user-icon"></i>
+            </div>
+            <!-- cart -->
+            <div class="cart">
+                <div class="cart-content">
+                    <!-- box 1 -->
+                    <div class="cart-box">
+                        <img src="sofa/093371ed9c1121b0553cd35e8e2bdff3.jpg" alt="">
+                        <div class="cart-text">
+                            <h3>Soft Furniture</h3>
+                            <span>$150</span>
+                            <span>x1</span>
+                        </div>
+                        <i class="bx bx-trash"></i>
+                    </div>
+                    <!-- box 2 -->
+                    <div class="cart-box">
+                        <img src="sofa/11.jpg" alt="">
+                        <div class="cart-text">
+                            <h3>Soft Furniture</h3>
+                            <span>$150</span>
+                            <span>x1</span>
+                        </div>
+                        <i class="bx bx-trash"></i>
+                    </div>
+                    <div class="total">
+                        <h3>2 Items</h3>
+                        <span>Total: $300</span>
+                    </div>
+                    <a href="#" class="btn">Proceed To Pay</a>
+                </div>
+            </div>
+            <!-- Login Form -->
+            <div class="login-form">
+                <!-- form -->
+                <form action="">
+                    <h2>Login To Continue</h2>
+                    <input type="email" name="" id="" placeholder="Your Email..." required>
+                    <input type="password" name="" id="" placeholder="Your Password..." required>
+                    <a href="#">Forget Password?</a>
+                    <input type="submit" value="Log In" class="btn">
+                    <a href="#">Create Account</a>
+                </form>
+            </div>
+
+        </div>
+    </header>
+    <!-- home section start -->
+    <section class="home container" id="home">
+        <div class="home-text">
+            <h1><span>Modern Furniture</span> <br>For Your House</h1>
+            <p>We understand your need for home decor <br> with unique decorative accessories.</p>
+            <a href="#" class="btn">Shop More</a>
+        </div>
+        <!-- Home Image -->
+        <div class="home-img">
+            <img src="sofa/27471.jpg" alt="">
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- popular section start -->
+    <section class="popular container" id="popular">
+        <div class="heading">
+            <h2>Popular</h2>
+            <a href="#">See All</a>
+        </div>
+        <!-- Popular Content -->
+        <div class="popular-content">
+            <!-- box 1 -->
+            <div class="box">
+                <img src="sofa/2852.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="box">
+                <img src="sofa/7603-33.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 3 -->
+            <div class="box">
+                <img src="sofa/848f20d1ad0b1c69907f34f0d2635117.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 4 -->
+            <div class="box">
+                <img src="sofa/Article+Sven+Sectional+Sofa+Birch+Ivory+Review+-+Love,+Minna.jpeg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popular section end -->
+    <!-- about section start -->
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="sofa/Best-Sofas-And-Couches-0-Hero.jpg" alt="">
+        </div>
+        <!-- About Text -->
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>To discover new furniture design ideas was never so handy, browse 500+ products you need to know is cheap online furniture shops from where you can buy quality products.</p>
+            <div class="features">
+                <i class="bx bxs-checkbox-checked"><span>Free Home Delivery</span></i>
+                <i class="bx bxs-checkbox-checked"><span>Easy Returns</span></i>
+                <i class="bx bxs-checkbox-checked"><span>Quality Assurance</span></i>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- products section start -->
+    <section class="products container" id="products">
+        <div class="heading">
+            <h2>Product Shop</h2>
+            <a href="#">See All</a>
+        </div>
+        <!-- Products Content -->
+        <div class="products-content">
+            <!-- box 1 -->
+            <div class="box">
+                <img src="sofa/11.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="box">
+                <img src="sofa/848f20d1ad0b1c69907f34f0d2635117.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 3 -->
+            <div class="box">
+                <img src="sofa/chesterfield-sofa-1554939860.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 4 -->
+            <div class="box">
+                <img src="sofa/crate-and-barrel-tight-back-sofa.jpeg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 5 -->
+            <div class="box">
+                <img src="sofa/New+Britain+88.19''+Linen+Rolled+Arm+Sofa.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 6 -->
+            <div class="box">
+                <img src="sofa/products_acme_furniture_color_suzanne-433352010_54010-b1.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="box">
+                <img src="sofa/SBVG-9013S-Fabric,+Kyler+Hopsack-Angle.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+            <!-- box 8 -->
+            <div class="box">
+                <img src="sofa/SM2684-SF-2T.jpg" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class="bx bx-cart-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- products section end -->
+    <!-- newsletter section start -->
+    <section class="newsletter">
+        <div class="newsletter-content container">
+            <div class="newsletter-text">
+                <h2>SIGN UP AND WIN!</h2>
+                <p>Sign Up And Get A Chance To Win The Giveaway Of The Week</p>
+            </div>
+            <!-- Form -->
+            <form action="">
+                <input type="email" name="" id="" placeholder="Enter Your Email..." required>
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- newsletter section end -->
+    <!-- footer start -->
+    <section class="footer container">
+        <div class="footer-box">
+            <h3>The Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-box">
+            <h3>Popular Categories</h3>
+            <a href="#">Bedroom</a>
+            <a href="#">Living Rooms</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Kitchen</a>
+        </div>
+        <div class="footer-box">
+            <h3>More Information</h3>
+            <a href="#">Shipping</a>
+            <a href="#">Delivery</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Sitemap</a>
+        </div>
+        <div class="footer-box">
+            <h3>Social</h3>
+            <div class="social">
+                <a href=""><i class="bx bxl-facebook"></i></a>
+                <a href=""><i class="bx bxl-twitter"></i></a>
+                <a href=""><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+    <!-- copyright -->
+    <div class="copyright">
+        <p>&#169; TanakaTesla 2021 || All Rights Reserved</p>
+    </div>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <!-- Link To JavaScript -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -190,6 +190,27 @@ header.shadow {
 }
 
 
+/* Able To Scroll */
+
+.nav .cart {
+    /* you can change as you need it */
+    /* overflow: auto; */
+    overflow: scroll;
+    /* to get scroll */
+}
+
+.cart::-webkit-scrollbar {
+    width: 1rem;
+    height: 10rem;
+    background: transparent;
+}
+
+.cart::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background: var(--hover-color);
+}
+
+
 /* Cart */
 
 .cart {
@@ -780,6 +801,9 @@ header.shadow {
 }
 
 @media (max-width: 624px) {
+    .nav {
+        padding: 4px 0;
+    }
     .navbar {
         flex-direction: column;
     }

@@ -74,7 +74,8 @@ let products = [{
     },
 ]
 for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener('click', () => {
+    carts[i].addEventListener('click', (e) => {
+        e.preventDefault()
         cartNumbers(products[i])
         totalCost(products[i])
     })
@@ -155,35 +156,32 @@ function displayCart() {
 
     let productContainer = document.querySelector(".cart-content")
     let cartCost = localStorage.getItem('totalCost')
+    let productNumbers = localStorage.getItem('cartNumbers')
 
     if (cartItems && productContainer) {
         productContainer.innerHTML = ''
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div class="product">
-                <ion-icon name="close-circle"></ion-icon>
-                <img src="images/${item.tag}.jpg">
-                <span>${item.name}</span>
+
+            <div class="cart-box">
+                        <img src="sofa/${item.tag}.jpg" alt="" style="width:40%; display:flex; justify-content:center; align-items:center; text-align:center;">
+                        <div class="cart-text" style="width: 50%; place-items:center; text-align:center;">  
+                            <h3>${item.name}</h3>
+                            <span>$${item.price}</span>
+                            <span>x ${item.inCart}</span>
+                        </div>
+                        <i class="bx bx-trash" style="width: 10%; display:flex; justify-content:center; align-items:center; text-align:center;"></i>
             </div>
-            <div class="price">$${item.price},00</div>
-            <div class="quantity">
-                <ion-icon name="arrow-back-circle-outline" onclick="decNumber()"></ion-icon>
-                <span>${item.inCart}</span>
-                <ion-icon name="arrow-forward-circle-outline" onclick="incNumber()"></ion-icon>
-            </div>
-            <div class="total">
-                $${item.inCart * item.price},00
-            </div>  
+            
             `
         })
+
         productContainer.innerHTML += `
-        <div class="basketTotalContainer">
-            <h4 class="basketTotalTitle">
-                Basket Total
-            </h4>
-            <h4 class="basketTotal">
-            $${cartCost},00
-            </h4>
+            <div class="total">
+                        <h3>${productNumbers} Items</h3>
+                        <span>Total: $${cartCost}</span>
+            </div>
+            <a href="#" class="btn">Proceed To Pay</a>
             `
     }
 }

@@ -1,5 +1,3 @@
-let carts = document.querySelectorAll('.add-cart')
-
 let products = [{
         id: 0,
         name: 'Grey Couch',

@@ -228,18 +228,110 @@ header.shadow {
     transition: .3s ease;
 }
 
+.container-products {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container-products i {
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container-products i:hover {
+    color: var(--hover-color);
+}
+
 .cart.open {
     display: flex;
 }
 
-.cart-content {
+.basketTotalContainer {
     display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
+    justify-content: flex-end;
     width: 100%;
-    padding: 20px;
-    row-gap: 1rem;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+.basketTotalBtn {
+    width: 60%;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product i {
+    cursor: pointer;
+}
+
+.cart-content {
+    width: 100%;
+    display: flex;
+    max-width: 650px;
+    flex-wrap: wrap;
+}
+
+.cart-content img {
+    width: 75px;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart-box {
@@ -273,12 +365,13 @@ header.shadow {
     color: var(--main-color);
 }
 
-.total {
+
+/* .total {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
-}
+} */
 
 .total h3 {
     font-size: 1rem;
@@ -832,6 +925,22 @@ header.shadow {
     .newsletter-content form {
         grid-template-columns: 1fr;
         row-gap: 1rem;
+    }
+}
+
+
+/* Others Devices */
+
+@media(max-width: 500px) {
+    .cart-content,
+    .product-header {
+        justify-content: center;
+    }
+    .sm-hide {
+        display: none;
+    }
+    .basketTotalContainer {
+        padding-right: 8%;
     }
 }
 

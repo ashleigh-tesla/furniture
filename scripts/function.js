@@ -141,7 +141,7 @@ function displayCart() {
                 <h4 class="basketTotalTitle">Basket Total </h4>
                 <h4 class="basketTotal">$${cartCost},00</h4>
             </div>
-            <a href="#" class="btn basketTotalBtn">Proceed To Pay</a>
+            <a href="#" class="btn basketTotalBtn"  onclick="alert('Thank You For Shopping With Us')">Proceed To Pay</a>
             `
         deleteButtons();
         manageQuantity();

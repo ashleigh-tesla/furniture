@@ -227,3 +227,41 @@ function deleteButtons() {
 }
 onLoadCartNumbers()
 displayCart()
+
+
+
+class Message {
+    constructor(email) {
+        this._email = email;
+    }
+    date() {
+        let date = new Date()
+        return date
+    }
+    message() {
+        const message = 'you have subscribed successfully to our monthly newsletter on'
+        return message;
+    }
+}
+
+
+const submitSubscribe = document.querySelector("#submitSubscribe")
+
+submitSubscribe.addEventListener('click', (event) => {
+
+    event.preventDefault()
+    subscribedEmail = document.getElementById("subscribeEmail").value
+
+    if (subscribedEmail == '') {
+        return
+    } else {
+        const message = new Message(subscribedEmail)
+
+        msg = subscribedEmail + ' ' + message.message() + ' ' + message.date()
+
+        setTimeout(function() {
+            alert(msg);
+        }, 1000);
+    }
+
+})
